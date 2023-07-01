@@ -1,0 +1,6 @@
+npx create-react-app my-app
+
+"react": "^16.10.1",
+    "react-dom": "^16.10.1",
+
+npm install bootstrap
