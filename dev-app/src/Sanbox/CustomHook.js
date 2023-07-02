@@ -14,7 +14,7 @@ const CustomHook = () => {
     loading: attractionsLoading,
     error: attractionsError,
     data: attractionsData,
-  } = useFetchData("/users");
+  } = useFetchData("/attractions");
 
   //if (loading) return <Spinner color="primary"/>
   if (userError)
