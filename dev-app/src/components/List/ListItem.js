@@ -1,9 +1,5 @@
 import React from "react";
-
-
-const ListItem = ({status,current,body}) => { 
-
-
+const ListItem = ({status,current,body}) => {
     return (
       <li className={`list-group-item ${status}`} aria-current={current}>
         {body}
