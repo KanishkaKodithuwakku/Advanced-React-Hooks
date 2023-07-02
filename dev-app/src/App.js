@@ -24,7 +24,24 @@ const App = () => {
       }
     }
     getAllUsers();
-  },[]);
+  }, []);
+  
+
+  useEffect(() => {
+    setLoading(true);
+    setError(null);
+    const getAllAttractions = async () => {
+      try {
+        const { data } = await httpClient.get("/attractions");
+        setUsers(data);
+      } catch ({ message }) {
+        setError(message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    getAllAttractions();
+  }, []);
 
 
   if (loading) return <Spinner color="primary"/>
