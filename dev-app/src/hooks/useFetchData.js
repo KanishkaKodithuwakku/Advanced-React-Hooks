@@ -23,6 +23,6 @@ const useFetchData = (endpoint) => {
     getData();
   }, [endpoint]);
     
-    return [loading, error, data];
+    return { loading, error, data };
 }
 export default useFetchData;
