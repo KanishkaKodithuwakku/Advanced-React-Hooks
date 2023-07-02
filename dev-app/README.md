@@ -7,6 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+npx create-react-app my-app
+"react": "^16.10.1",
+"react-dom": "^16.10.1",
+npm install bootstrap
+npm install axios
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
