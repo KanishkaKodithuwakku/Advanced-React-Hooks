@@ -21,10 +21,15 @@ const FilterDataHook = () => {
   };
   
   const handleSelectInputChange = (text) => {
-  //  alert(text);
+    //alert(text);
       setSelectText(text);
       //alert(selectText);
-    };
+  };
+  
+const options = [
+  { id: 1, value: "male", label: "Male" },
+  { id: 2, value: "female", label: "Female" },
+];
 
 
   if (loading) return <Spinner color="danger" />;
@@ -56,6 +61,7 @@ const FilterDataHook = () => {
               title={`Gender`}
               label={`Gender`}
               handleSelectInputChange={handleSelectInputChange}
+              options={options}
             />
           </div>
         </div>
