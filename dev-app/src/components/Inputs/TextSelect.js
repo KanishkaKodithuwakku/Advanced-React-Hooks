@@ -9,7 +9,7 @@ const TextSelect = ({ handleSelectInputChange,title,label,options }) => {
         className="form-select"
         onChange={ (e) => handleSelectInputChange(e.target.value)}
       >
-        <option selected>Select {title}</option>
+        {/* <option selected>Select {title}</option> */}
 
         {options.map((option) => {
           return (
