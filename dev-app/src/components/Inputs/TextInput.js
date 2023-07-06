@@ -5,14 +5,14 @@ const TextInput = ({ handleSearchInputChange, label,placeholder,type }) => {
   return (
     <>
       {label && (
-        <label class="form-label">
+        <label className="form-label">
           {label}
         </label>
       )}
 
       <input
         type={type}
-        class="form-control"
+        className="form-control"
         placeholder={placeholder}
         onChange={(e) => handleSearchInputChange(e.target.value)}
       />
